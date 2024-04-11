@@ -1,5 +1,6 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class SelIntroduction {
 
@@ -13,11 +14,27 @@ public class SelIntroduction {
 		// WebDriver is an interface
 		// WebDriver methods + personal class methods if they wish
 		
-		WebDriver driver = new ChromeDriver();
+		// selenium manager won't be activated if property is set
+		// System.setProperty("webdriver.chrome.driver", "D:/Browser Drivers/chromedriver.exe");
+		
 		
 		// driver.resetInputState(); // this method belongs to ChromeDriver not WebDriver
 		// WebDriver ensures that it will work for all compatible browsers with Selenium
-		// testing git
+		
+		// chromedriver.exe invokes -> Chrome browser
+		// chromedriver.exe is a middle-man proxy and provided by Chrome team
+		
+		// WebDriver driver = new ChromeDriver();
+		
+		// Firefox launch
+		System.setProperty("webdriver.gecko.driver", "D:/Browser Drivers/geckodriver.exe");
+		WebDriver driver = new FirefoxDriver();
+		
+		driver.get("https://rahulshettyacademy.com");
+		System.out.println(driver.getTitle());
+		System.out.println(driver.getCurrentUrl());
+		driver.close();
+		// driver.quit();
 	}
 
 }
