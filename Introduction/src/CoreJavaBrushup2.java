@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class CoreJavaBrushup2 {
 
@@ -21,6 +23,22 @@ public class CoreJavaBrushup2 {
 		a.add("academy");
 		a.add("selenium");
 		System.out.println(a.get(3));
+		
+		for (int i = 0; i < a.size(); i++) {
+			System.out.println(a.get(i));
+		}
+		System.out.println("***********");
+		for (String val : a) {
+			System.out.println(val);
+		}
+		System.out.println(a.contains("selenium")); 
+		
+		
+		// convert from array to List
+		String[] name = {"rahul" , "shetty", "selenium"};
+		System.out.println(name[0] == "rahul");
+		List<String> nameArrayList = Arrays.asList(name);
+		System.out.println(nameArrayList.contains("selenium"));
 	}
 
 }
