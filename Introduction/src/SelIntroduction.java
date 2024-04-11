@@ -17,7 +17,7 @@ public class SelIntroduction {
 		
 		// driver.resetInputState(); // this method belongs to ChromeDriver not WebDriver
 		// WebDriver ensures that it will work for all compatible browsers with Selenium
-
+		// testing git
 	}
 
 }
