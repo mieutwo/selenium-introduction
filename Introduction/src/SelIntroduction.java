@@ -1,5 +1,6 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class SelIntroduction {
@@ -15,7 +16,7 @@ public class SelIntroduction {
 		// WebDriver methods + personal class methods if they wish
 		
 		// selenium manager won't be activated if property is set
-		// System.setProperty("webdriver.chrome.driver", "D:/Browser Drivers/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:/Browser Drivers/chromedriver.exe");
 		
 		
 		// driver.resetInputState(); // this method belongs to ChromeDriver not WebDriver
@@ -24,11 +25,15 @@ public class SelIntroduction {
 		// chromedriver.exe invokes -> Chrome browser
 		// chromedriver.exe is a middle-man proxy and provided by Chrome team
 		
-		// WebDriver driver = new ChromeDriver();
+		WebDriver driver = new ChromeDriver();
 		
 		// Firefox launch
 		System.setProperty("webdriver.gecko.driver", "D:/Browser Drivers/geckodriver.exe");
-		WebDriver driver = new FirefoxDriver();
+		WebDriver driver1 = new FirefoxDriver();
+		
+		// Microsoft Edge
+		System.setProperty("webdriver.edge.driver", "D:/Browser Drivers/msedgedriver.exe");
+		WebDriver driver2 = new EdgeDriver();
 		
 		driver.get("https://rahulshettyacademy.com");
 		System.out.println(driver.getTitle());
