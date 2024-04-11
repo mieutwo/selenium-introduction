@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class CoreJavaBrushup2 {
 
@@ -13,6 +14,13 @@ public class CoreJavaBrushup2 {
 				System.out.println(arr2[i] + " is not even");
 			}
 		}
+		
+		ArrayList<String> a = new ArrayList<>();
+		a.add("mandy");
+		a.add("mieu");
+		a.add("academy");
+		a.add("selenium");
+		System.out.println(a.get(3));
 	}
 
 }
