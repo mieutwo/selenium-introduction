@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class CoreJavaBrushup2 {
+public class CoreJavaBrushUp2 {
 
 	public static void main(String[] args) {
 		int[] arr2 = {1, 2, 4, 3, -2, 20, 30, 10, 231, -1238};
