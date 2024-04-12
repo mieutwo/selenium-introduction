@@ -1,3 +1,4 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -7,6 +8,8 @@ public class Locators {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver", "D:/Browser Drivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
+		driver.get("https://rahulshettyacademy.com/locatorspractice/");
+		driver.findElement(By.id("inputUsername")).sendKeys("rahul");
 	}
 
 }
