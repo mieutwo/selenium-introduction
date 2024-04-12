@@ -21,7 +21,9 @@ public class Locators {
 		
 		// p.error or p[class='error'] or p[class=error]
 		System.out.println(driver.findElement(By.cssSelector("p.error")).getText());
-		driver.close();
+		driver.findElement(By.linkText("Forgot your password?")).click();
+		driver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("John");
+		//driver.close();
 	}
 
 }
