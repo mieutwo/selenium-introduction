@@ -54,7 +54,7 @@ public class Locators {
 		driver.findElement(By.id("chkboxOne")).click();
 		driver.findElement(By.id("chkboxTwo")).click();
 		driver.findElement(By.xpath("//button[contains(@class,'submit')]")).click();
-		//driver.close();
+		driver.quit();
 	}
 
 }
