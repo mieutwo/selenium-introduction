@@ -3,14 +3,20 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 
 public class Locators2 {
 
 	public static void main(String[] args) {
 		String name = "rahul";
-		System.setProperty("webdriver.chrome.driver", "D:/Browser Drivers/chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
+//		System.setProperty("webdriver.chrome.driver", "D:/Browser Drivers/chromedriver.exe");
+//		WebDriver driver = new ChromeDriver();
+//		System.setProperty("webdriver.gecko.driver", "D:/Browser Drivers/geckodriver.exe");
+//		WebDriver driver = new FirefoxDriver();
+		System.setProperty("webdriver.edge.driver", "D:/Browser Drivers/msedgedriver.exe");
+		WebDriver driver = new EdgeDriver();
 		
 		// implicit wait - 2 seconds time out
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
