@@ -19,7 +19,7 @@ public class UpdatedDropdown {
 			System.out.println(driver.findElement(By.id("divpaxinfo")).getText());
 		}
 		driver.findElement(By.id("btnclosepaxoption")).click();
-
+		driver.quit();
 	}
 
 }
