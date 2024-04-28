@@ -38,8 +38,8 @@ public class SelIntroduction {
 		driver.get("https://rahulshettyacademy.com");
 		System.out.println(driver.getTitle());
 		System.out.println(driver.getCurrentUrl());
-		driver.close();
-		// driver.quit();
+		// driver.close();
+		driver.quit();
 	}
 
 }

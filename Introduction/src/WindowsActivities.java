@@ -13,6 +13,6 @@ public class WindowsActivities {
 		
 		driver.navigate().back();
 		driver.navigate().forward();
-	}
+		driver.quit();	}
 
 }
